@@ -223,7 +223,7 @@ $(function () {
     $("#addProductBtn").on("click", AdminProducts);
     $("#deleteProductBtn").on("click", deleteProduct);
 
-    if (window.location.href.includes("admin.html")) {
+    if (window.location.href.includes("index.html")) {
         updateAdminTableView();
         displayOnAdmin();
         showLowStockAlerts();
@@ -284,7 +284,7 @@ $(function () {
                 $("#orderForm").hide();
                 $("#name, #phoneNumber, #address").val('');
                 $messageEl.text('');
-                window.location.href = "admin.html";
+                window.location.href = "index.html";
             }, 2000);
 
         } else {
@@ -331,3 +331,4 @@ const formatDate = (date) => date.toISOString().split('T')[0];
 }
 
 document.addEventListener("DOMContentLoaded", promotion);
+
