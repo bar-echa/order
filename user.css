@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #2444c4;
+    min-height: 100vh;
+    padding: 0 10px;
+}
+h1 {
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: underline wavy #ffcc00; 
+    font-size: 48px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+    background: linear-gradient(90deg, #656565, #feb47b);
+    margin-bottom: 20px;
+}
+h2{
+    font-weight:700px;
+    letter-spacing:2px;
+
+    background: linear-gradient(90deg, #131212, #2f2b29);
+}
+
+ 
+.logo img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: #b7b6c6;
+    padding: 20px 0;
+    transition: all 0.3s ease;
+}
+.nav-links{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: 100%;
+}
+.nav-links li{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.nav-links li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+.nav-links li a:hover{
+    background: #fff;
+    color: #2444c4;
+}
+.nav-links li a i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.content{
+    
+    padding: 20px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 50px;
+  
+}
+.content p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0;
+    line-height: 1.5;
+    Margin-right: 60px;
+    color: #fbd0d0;
+}
+.content h1{
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-right: 700px;
+    text-decoration:none;
+}
+#productlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    height: 50%;
+    width: 85%;
+}
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 200px;
+    padding: 15px;
+    left:0;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.product-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+.product-item p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+.product-item button {
+    background-color: #2444c4;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.product-item button:hover {
+    background-color: #1a32a0;
+}
+
+
+
+form#orderForm {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(74,144,226,0.15);
+  max-width: 400px;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form#orderForm:hover {
+  box-shadow: 0 6px 20px rgba(74,144,226,0.3);
+}
+
+form#orderForm input[type="text"],
+form#orderForm input[type="tel"] {
+  width: 100%;
+  padding: 5px 11px;
+  margin: 11px 0;
+  border-radius: 8px;
+  border: 1.8px solid #ccc;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form#orderForm input[type="text"]:focus,
+form#orderForm input[type="tel"]:focus {
+  border-color: #4A90E2;
+  outline: none;
+  box-shadow: 0 0 8px rgba(74,144,226,0.5);
+}
+
+form#orderForm input[readonly] {
+  background-color: #f0f0f0;
+  color: #666;
+  cursor: not-allowed;
+  font-style: italic;
+  user-select: none;
+}
+
+form#orderForm input[type="submit"] {
+  width: 100%;
+  background-color: #4A90E2;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 14px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(74,144,226,0.35);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form#orderForm input[type="submit"]:hover {
+  background-color: #357ABD;
+  box-shadow: 0 6px 20px rgba(53,122,189,0.5);
+}
+
+form#orderForm input[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+#message{
+ margin-top:10px;
+  font-weight:bold;
+  color:black;
+  text-align:center;
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size:40px;
+    }
+}
